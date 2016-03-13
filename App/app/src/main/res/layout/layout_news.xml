@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_show_news" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_size_60"
+        android:background="@color/main_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18"
+            android:padding="@dimen/space_10"
+            android:layout_gravity="center"
+            android:text="Thế giới công nghệ"
+            android:textColor="@color/text_for_main_color"
+            android:id="@+id/tv_title_news" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/height_size_300"
+            android:layout_height="@dimen/space_5"
+            android:background="@color/background_space"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_show_more_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_main_color"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lv_show_news">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_10"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="@dimen/height_size_30"
+                android:layout_height="@dimen/height_size_30"
+                android:id="@+id/btn_news_page_head" />
+
+            <Button
+                android:layout_width="@dimen/height_size_30"
+                android:layout_height="@dimen/height_size_30"
+                android:id="@+id/btn_news_page_preview" />
+
+            <Button
+                android:layout_width="@dimen/height_size_30"
+                android:layout_height="@dimen/height_size_30"
+                android:id="@+id/btn_news_page_current" />
+
+            <Button
+                android:layout_width="@dimen/height_size_30"
+                android:layout_height="@dimen/height_size_30"
+                android:id="@+id/btn_news_page_next" />
+
+            <Button
+                android:layout_width="@dimen/height_size_30"
+                android:layout_height="@dimen/height_size_30"
+                android:id="@+id/btn_news_page_last" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

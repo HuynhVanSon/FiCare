@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/light_main_color"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/height_size_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginLeft="@dimen/space_20"
+                android:gravity="center_vertical"
+                android:text="Thêm bạn cùng trò chuyện"
+                android:layout_toRightOf="@+id/btn_add_message"/>
+
+            <Button
+                android:layout_width="@dimen/height_size_35"
+                android:layout_height="@dimen/height_size_35"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:id="@+id/btn_add_message" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
