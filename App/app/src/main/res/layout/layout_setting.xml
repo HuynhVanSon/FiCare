@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boder_style_text"
+        android:layout_margin="@dimen/space_10">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgv_setting_avatar"
+                android:layout_width="@dimen/height_size_100"
+                android:layout_height="@dimen/height_size_100"
+                android:layout_marginTop="@dimen/space_10"/>
+
+            <TextView
+                android:id="@+id/tv_setting_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:layout_margin="@dimen/space_10"
+                android:textColor="@color/text_for_background_color"/>
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_size_300"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/background_space"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_size_40"
+                android:layout_margin="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                android:background="@drawable/boder_style_text">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:text="Chế độ im lặng" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <Switch
+                        android:id="@+id/switch_setting_silent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_size_40"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                android:background="@drawable/boder_style_text">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:text="Nhận tin nhắn từ người lạ" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <Switch
+                        android:id="@+id/switch_setting_receive_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_setting_view_save_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_size_40"
+                android:layout_margin="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                android:background="@drawable/boder_style_text"
+                android:gravity="center"
+                android:text="Xem lịch sử lưu lại" />
+
+            <TextView
+                android:id="@+id/tv_setting_about_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_size_40"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                android:background="@drawable/boder_style_text"
+                android:gravity="center"
+                android:text="Về ứng dụng" />
+
+            <TextView
+                android:id="@+id/tv_setting_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_size_40"
+                android:layout_margin="@dimen/space_10"
+                android:padding="@dimen/space_5"
+                android:background="@drawable/boder_style_text"
+                android:gravity="center"
+                android:text="Về nhà phát triển" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

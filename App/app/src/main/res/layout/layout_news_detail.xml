@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main">
+
+    <include
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_style_text">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_size_50"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/imgv_news_detail_avatar_author"
+                        android:layout_width="@dimen/height_size_40"
+                        android:layout_height="@dimen/height_size_40"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_news_detail_author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Author"
+                            android:textSize="@dimen/text_size_16"
+                            android:textColor="@color/text_for_background_color"/>
+
+                        <TextView
+                            android:id="@+id/tv_news_detail_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:textSize="@dimen/text_size_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_news_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:text="Title"
+                    android:textSize="@dimen/text_size_16"
+                    android:textColor="@color/text_for_background_color" />
+
+                <ImageView
+                    android:id="@+id/imgv_news_detail_image_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_size_150"
+                    android:layout_margin="@dimen/space_10" />
+
+                <TextView
+                    android:id="@+id/tv_news_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_news_detail_like"
+                            android:layout_width="@dimen/height_size_30"
+                            android:layout_height="@dimen/height_size_30" />
+
+                        <TextView
+                            android:id="@+id/tv_news_detail_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="@dimen/space_3"
+                            android:textColor="@color/text_for_background_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Like" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/btn_news_detail_comment"
+                            android:layout_width="@dimen/height_size_30"
+                            android:layout_height="@dimen/height_size_30" />
+
+                        <TextView
+                            android:id="@+id/tv_news_detail_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:padding="@dimen/space_3"
+                            android:textColor="@color/text_for_background_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Comment" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_news_detail_others_option"
+                        android:layout_width="@dimen/height_size_30"
+                        android:layout_height="@dimen/height_size_30" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_news_detail_comment"
+                android:layout_marginTop="@dimen/space_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_style_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

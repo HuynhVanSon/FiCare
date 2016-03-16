@@ -63,8 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_main_color"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/lv_show_news">
+        android:layout_alignParentBottom="true">
 
         <LinearLayout
             android:orientation="horizontal"
